@@ -130,3 +130,6 @@ _modules/*
 *.sqlite
 *.sqlite3
 /writable/backups/
+
+# Arquivos temporários de diagnóstico
+tmp_probe.php
