@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+@theme static {
+  --color-primary: #a179c3;
+  --color-secondary: #c9aee0;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-2.5 bg-primary hover:bg-primary/90 active:bg-primary/75 border border-black/10 flex items-center justify-center rounded-lg cursor-pointer transition;
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+      0 1px 1px rgba(31, 41, 55, 0.1);
+  }
+
+  .btn-secondary {
+    @apply px-2.5 bg-white border border-gray-200 hover:border-gray-300 active:bg-gray-100 rounded-lg cursor-pointer transition flex items-center justify-center;
+    box-shadow: 0px 1px 1px rgba(31, 41, 55, 0.04);
+  }
+
+  .btn-delete {
+    @apply px-2.5 bg-white border border-gray-200 hover:border-red-300 active:bg-red-50 text-gray-600 hover:text-red-600 rounded-lg cursor-pointer transition flex items-center justify-center;
+    box-shadow: 0px 1px 1px rgba(31, 41, 55, 0.04);
+  }
+
+  .btn-delete-confirm {
+    @apply px-2.5 bg-red-600 hover:bg-red-600/75 active:bg-red-600/55 border border-black/10 flex items-center justify-center rounded-lg cursor-pointer transition;
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.4),
+      0 1px 1px rgba(31, 41, 55, 0.1);
+  }
+
+  .btn-error {
+    @apply px-2.5 bg-red-600 hover:bg-red-600/75 active:bg-red-600/55 border border-black/10 flex items-center justify-center rounded-lg cursor-pointer transition;
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+      0 1px 1px rgba(31, 41, 55, 0.1);
+  }
+
+  .stick-primary {
+    @apply w-3 h-auto bg-primary border border-black/10 rounded-full;
+    box-shadow:
+      inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
+      0 1px 1px rgba(31, 41, 55, 0.1);
+  }
+
+  .label-primary {
+    @apply mx-0.5 text-gray-600 text-[13px] lg:text-[14px] font-[550] truncate;
+  }
+
+  .input-primary {
+    @apply w-full h-11 text-gray-600 text-[13px] lg:text-[14px] indent-2.5 pr-2.5 bg-gray-50 border border-gray-200 placeholder:text-gray-400 rounded-lg outline-0;
+    box-shadow: 0px 1px 1px rgba(31, 41, 55, 0.04);
+  }
+
+  .select-primary {
+    @apply w-full h-full text-gray-600 text-[13px] lg:text-[14px] pl-2.5 pr-8 bg-transparent appearance-none outline-none cursor-pointer;
+  }
+
+  .textarea-primary {
+    @apply w-full h-16 p-2.5 text-gray-600 text-[13px] border border-gray-200 rounded-lg appearance-none outline-0;
+    box-shadow: 0px 1px 1px rgba(31, 41, 55, 0.04);
+  }
+
+  .checkbox-true {
+    @apply bg-primary hover:bg-primary/90 active:bg-primary/75 border border-black/10;
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
+      0 1px 1px rgba(31, 41, 55, 0.1);
+  }
+
+  .checkbox-false {
+    @apply relative overflow-hidden bg-white border border-gray-200 hover:border-gray-300 active:bg-gray-100 rounded-lg cursor-pointer transition flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:bg-primary/2 before:z-1;
+    box-shadow: 0px 1px 1px rgba(31, 41, 55, 0.04);
+  }
+
+  .line-horizontal {
+    @apply w-screen h-0.5 bg-gray-200 border-t border-white absolute;
+  }
+
+  .line-vertical {
+    @apply w-0.5 h-screen bg-gray-200 border-l border-white absolute;
+  }
+}
+
+@layer utilities {
+  .wght-100 {
+    font-variation-settings: 'wght' 100;
+  }
+
+  .wght-125 {
+    font-variation-settings: 'wght' 125;
+  }
+
+  .wght-150 {
+    font-variation-settings: 'wght' 150;
+  }
+
+  .wght-175 {
+    font-variation-settings: 'wght' 175;
+  }
+
+  .wght-200 {
+    font-variation-settings: 'wght' 200;
+  }
+
+  .wght-225 {
+    font-variation-settings: 'wght' 225;
+  }
+
+  .wght-250 {
+    font-variation-settings: 'wght' 250;
+  }
+
+  .wght-275 {
+    font-variation-settings: 'wght' 275;
+  }
+
+  .wght-300 {
+    font-variation-settings: 'wght' 300;
+  }
+
+  .wght-325 {
+    font-variation-settings: 'wght' 325;
+  }
+
+  .wght-350 {
+    font-variation-settings: 'wght' 350;
+  }
+
+  .wght-375 {
+    font-variation-settings: 'wght' 375;
+  }
+
+  .wght-400 {
+    font-variation-settings: 'wght' 400;
+  }
+
+  .wght-425 {
+    font-variation-settings: 'wght' 425;
+  }
+
+  .wght-450 {
+    font-variation-settings: 'wght' 450;
+  }
+
+  .wght-475 {
+    font-variation-settings: 'wght' 475;
+  }
+
+  .wght-500 {
+    font-variation-settings: 'wght' 500;
+  }
+
+  .wght-525 {
+    font-variation-settings: 'wght' 525;
+  }
+
+  .wght-550 {
+    font-variation-settings: 'wght' 550;
+  }
+
+  .wght-575 {
+    font-variation-settings: 'wght' 575;
+  }
+
+  .wght-600 {
+    font-variation-settings: 'wght' 600;
+  }
+
+  .wght-625 {
+    font-variation-settings: 'wght' 625;
+  }
+
+  .wght-650 {
+    font-variation-settings: 'wght' 650;
+  }
+
+  .wght-675 {
+    font-variation-settings: 'wght' 675;
+  }
+
+  .wght-700 {
+    font-variation-settings: 'wght' 700;
+  }
+
+  .wght-725 {
+    font-variation-settings: 'wght' 725;
+  }
+
+  .wght-750 {
+    font-variation-settings: 'wght' 750;
+  }
+
+  .wght-775 {
+    font-variation-settings: 'wght' 775;
+  }
+
+  .wght-800 {
+    font-variation-settings: 'wght' 800;
+  }
+
+  .wght-825 {
+    font-variation-settings: 'wght' 825;
+  }
+
+  .wght-850 {
+    font-variation-settings: 'wght' 850;
+  }
+
+  .wght-875 {
+    font-variation-settings: 'wght' 875;
+  }
+
+  .wght-900 {
+    font-variation-settings: 'wght' 900;
+  }
+}
+
+/* Oculta a toolbar de debug do CodeIgniter nas páginas do sistema */
+.debug-bar,
+.debug-bar-ndisplay,
+.debug-bar-dinlineBlock,
+#toolbarContainer,
+#debug-icon {
+  display: none !important;
+}
+
+/* Formulário público: campo com ícone à esquerda */
+.input-primary.has-icon {
+  text-indent: calc(var(--spacing) * 6);
+}
+.input-icon {
+  position: absolute;
+  left: calc(var(--spacing) * 2.5);
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(var(--spacing) * 4.5);
+  height: calc(var(--spacing) * 4.5);
+  color: var(--color-gray-400);
+  pointer-events: none;
+  stroke-width: 1.5;
+}

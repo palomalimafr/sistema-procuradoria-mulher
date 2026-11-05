@@ -1,0 +1,33 @@
+{
+  "name": "Procuradoria da Mulher — Sistema de Gestão",
+  "short_name": "Proc. Mulher",
+  "description": "Sistema de gestão da Procuradoria da Mulher: atendimentos, acolhimento, medidas protetivas, processos e pedidos SOS.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#a179c3",
+  "background_color": "#fafafa",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/pwa/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
