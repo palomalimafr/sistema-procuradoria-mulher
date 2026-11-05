@@ -124,3 +124,9 @@ _modules/*
 
 /results/
 /phpunit.xml
+
+# Dados locais do Sistema da Mulher
+*.db
+*.sqlite
+*.sqlite3
+/writable/backups/
